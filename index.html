@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Question Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #question-output {
+            font-size: 1.5em;
+            margin-top: 20px;
+        }
+        select, button {
+            padding: 10px;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Wine Knowledge Random Question Generator</h1>
+    <label for="category-dropdown">Choose a category:</label>
+    <select id="category-dropdown">
+        <option value="all">All Categories</option>
+        <option value="supply-demand">Supply & Demand</option>
+        <option value="industry-structure">Industry Structure</option>
+        <option value="intermediaries">Intermediaries</option>
+        <option value="branding">Branding & Marketing</option>
+    </select>
+    <button onclick="generateQuestion()">Generate Question</button>
+    <button onclick="resetGenerator()">Reset</button>
+    <div id="question-output"></div>
+    <script src="script.js"></script>
+</body>
+</html>
